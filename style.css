@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+h1,h2,h3,h4{
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+p, a {
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+figure img {
+	width: 100%;
+	height: auto;
+}
+
+
+.flex {
+	display: flex;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+}
+
+header {
+	padding-top: 32px;
+	padding-left: 65px;
+	margin-bottom: 78px;
+}
+
+header .flex {
+	justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+	margin-right: 32px;
+	color: #828282;
+	/*font-family: "Josefin Sans Semibold";*/
+	font-weight: 600;
+	font-size: 15px;
+	letter-spacing: 1.5px;
+	line-height: 15px;
+	text-decoration: none;
+}
+
+
+.slide-info {
+	margin-bottom: 180px;
+}
+
+.slide-info .container {
+	justify-content: flex-end;
+	position: relative;
+}
+
+.slide-info .container .title-slider {
+	width: 61%;
+	height: auto;
+	position: absolute;
+	top: 36%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+}
+
+
+.slide-info .container .title-slider h1 {
+	color: #828282;
+	/*font-family: "Josefin Sans Light";*/
+	font-weight: 300;
+	font-size: 83px;
+	letter-spacing: 3.2px;
+	line-height: 83px;
+	margin-bottom: 22px;
+}
+
+
+.slide-info .container .title-slider p {
+	color: #4F4F4F;
+  	/*font-family: "Josefin Sans";*/
+  	font-weight: 300;
+  	font-size: 27px;
+  	line-height: 27px;
+  	padding-right: 270px;
+}
+
+
+.slide-info .container .slide {
+	width: 50%;
+	height: auto;
+}
+
+.info-page {
+	margin-bottom: 104px;
+}
+
+.info-page .container .image-piram {
+	width: 50%;
+	position: relative;
+}
+
+.info-page .container .image-piram .img_flegs {
+	width: 92px;
+	height: 92px;
+	position: absolute;
+	top: 25%;
+	left: 57%;
+	transform: translate(-50%, -50%);
+}
+
+.info-page .container .info-about {
+	width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-left: 201px;
+	padding-top: 60px;
+}
+
+.info-page .container .info-about h3 {
+	color: #828282;
+	  /*font-family: "Josefin Sans SemiBold";*/
+	  font-weight: 600;
+	  font-size: 36px;
+	  line-height: 36px;
+	  margin-bottom: 20px;
+}
+
+.info-page .container .info-about p {
+	color: #4F4F4F;
+  	font-weight: 300;
+  	font-size: 18px;
+  	line-height: 18px;
+  	padding-right: 86px;
+  	margin-bottom: 80px;
+}
+
+
+.section-diviciones .container {
+	background-color: #333;
+	padding-left: 84px;
+    padding-right: 66px;
+    padding-top: 62px;
+}
+
+.section-diviciones .container h2 {
+	color: #FFF;
+	/*font-family: "Josefin Sans SemiBold";*/
+	font-weight: 400;
+	font-size: 46px;
+	letter-spacing: 24.28px;
+	line-height: 39px;
+	text-align: center;
+	margin-bottom: 102px;
+}
+
+.section-diviciones .container h2.title-ventures {
+	margin-top: 172px;
+	margin-bottom: 105px;
+
+}
+
+.section-diviciones .container .container-diviciones {
+	position: relative;
+	margin-bottom: 70px;
+}
+
+.section-diviciones .container .container-diviciones figure {
+	width: 71%;
+	height: auto;
+}
+
+.section-diviciones .container .container-diviciones-two .cont-vermas h3,
+.section-diviciones .container .container-diviciones .cont-vermas h3 {
+	color: #FFF;
+	/*font-family: "Josefin Sans";*/
+	font-weight: 300;
+	font-size: 31px;
+	letter-spacing: 16.36px;
+	line-height: 31px;
+	text-align: center;
+}
+
+.section-diviciones .container .container-diviciones-two .cont-vermas a,
+.section-diviciones .container .container-diviciones .cont-vermas a {
+	color: #FFF;
+	/*font-family: "Josefin Sans";*/
+	font-weight: 300;
+	font-size: 26px;
+	line-height: 26px;
+	text-align: center;
+	text-decoration: none;
+	position: absolute;
+	bottom: 0;
+	right: 20px;
+}
+
+.section-diviciones .container .container-diviciones-two .cont-vermas,
+.section-diviciones .container .container-diviciones .cont-vermas {
+	background-color: #333;
+	position: absolute;
+	top: 87%;
+	left: 62%;
+	transform: translate(-50%, -50%);
+	padding: 51px 23px 62px 27px;
+}
+
+
+.section-diviciones .container .container-diviciones-two {
+	position: relative;
+	display: flex;
+	margin-bottom: 70px;
+}
+
+.section-diviciones .container .container-diviciones-two figure {
+	margin-right: 27px;
+}
+
+
