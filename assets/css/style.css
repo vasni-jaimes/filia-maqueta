@@ -333,9 +333,38 @@ header nav a {
 	align-items: center;
 	position: relative;
 	justify-content: space-around;
+	margin-bottom: 150px;
 }
 
-.background-marcas-espejo::before,
+.background-marcas-espejo > figure,
+.background-marcas > figure {
+	position: relative;
+}
+
+.background-marcas > figure::after {
+	content: '';
+    position: absolute;
+    top: -15px;
+    left: -53px;
+    width: 70%;
+    height: 102%;
+    background: #000080;
+    z-index: -1;
+}
+
+.background-marcas-espejo > figure::after,
+.background-marcas > figure::after {
+	content: '';
+    position: absolute;
+    top: -15px;
+    left: -53px;
+    width: 70%;
+    height: 102%;
+    background: #000080;
+    z-index: -1;
+}
+
+/*.background-marcas-espejo::before,
 .background-marcas::before {
 	content: '';
 	position: absolute;
@@ -344,13 +373,28 @@ header nav a {
 	width: 100%;
 	height: 100%;
 	background: rgba(0,0,0,0.41);
-}
+}*/
 
 .background-marcas .info-marcas figure {
 	width: 30%;
     margin: 0 auto;
     margin-bottom: 0px;
     margin-bottom: 50px;
+}
+
+.background-marcas-espejo .info-marcas figure {
+	margin: 0 auto;
+	margin-bottom: 50px;
+    width: 60%;
+}
+
+
+.background-marcas .info-marcas figure img {
+	filter: invert(1) sepia(4) hue-rotate(50deg) saturate(10%);
+}
+
+.background-marcas-espejo .info-marcas figure img {
+	filter: invert(1) sepia(4) hue-rotate(50deg) saturate(10%);
 }
 
 .background-marcas-espejo .info-marcas,
@@ -372,28 +416,42 @@ header nav a {
 	padding-right: 100px;
 }
 
-.background-marcas-espejo .info-marcas .description,
-.background-marcas .info-marcas .description {
-	color: #FFF;
+.background-marcas-espejo .info-marcas .description {
+	color: #000;
 	/*font-family: "Josefin Sans";*/
 	font-weight: 300;
 	font-size: 27px;
 	line-height: 27px;
-	line-height: 27px;
-	margin-bottom: 32px;
-	padding-right: 80px;
-	text-align: left;
+    margin-bottom: 106px;
+    text-align: left;
+    padding-left: 33px;
 }
+
+
+.background-marcas .info-marcas .description {
+	color: #000;
+	/*font-family: "Josefin Sans";*/
+	font-weight: 300;
+	font-size: 27px;
+	line-height: 27px;
+    margin-bottom: 106px;
+    padding-right: 80px;
+    text-align: left;
+    padding-left: 90px;
+}
+
 
 .background-marcas-espejo .info-marcas .vermas-marca,
 .background-marcas .info-marcas .vermas-marca {
-	color: #FFF;
+	color: #000;
 	/*font-family: "Josefin Sans";*/
 	font-weight: 300;
 	font-size: 31px;
 	letter-spacing: 16.36px;
 	line-height: 31px;
 	text-decoration: none;
+	display: block;
+	text-align: center;
 }
 
 
