@@ -447,7 +447,7 @@ header nav a {
 	/*font-family: "Josefin Sans";*/
 	font-weight: 300;
 	font-size: 31px;
-	letter-spacing: 16.36px;
+	letter-spacing: 0px;
 	line-height: 31px;
 	text-decoration: none;
 	display: block;
@@ -762,7 +762,264 @@ header nav a {
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
+	.slide-info .container {
+		position: relative;
+		flex-direction: column;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.slide-info .container .title-slider {
+		width: 100%;
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: none;
+		z-index: 1;
+	}
+
+	.slide-info .container .title-slider h1 {
+		font-size: 60px;
+		margin-bottom: 30px;
+		padding-left: 50px;
+	}
+
+	.slide-info .container .title-slider p {
+		padding-right: 0;
+		text-align: justify;
+		margin-bottom: 60px;
+		padding-left: 50px;
+		padding-right: 80px;
+	}
+
+	.slide-info .container .slide {
+		width: 100%;
+		height: auto;
+	}
+
+	.info-page .container .image-piram {
+		width: 100%;
+	}
+
+	.info-page .container .info-about {
+		width: 100%;
+		padding-left: 0;
+		align-items: center;
+	}
+
+	.info-page .container .info-about p {
+		padding-left: 100px;
+		padding-right: 100px;
+	}
+
+	.section-diviciones .container .container-diviciones-two .cont-vermas a, 
+	.section-diviciones .container .container-diviciones .cont-vermas a {
+		right: 42%;
+	}
+
+	.info-page div.container {
+		flex-direction: column;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.section-diviciones .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+    
+    .section-diviciones .container h2 {
+    	letter-spacing: 10px;
+    }
+
+    .section-diviciones .container .container-diviciones-two,
+    .section-diviciones .container .container-diviciones {
+    	display: flex;
+		flex-direction: column;
+    }
+
+    .section-diviciones .container .container-diviciones figure {
+    	width: 100%;
+    }
+
+    .section-diviciones .container .container-diviciones-two .cont-vermas, 
+    .section-diviciones .container .container-diviciones .cont-vermas {
+    	position: relative;
+    	top: 0;
+    	left: 0;
+    	transform: none;
+    }
+
+    .section-diviciones .container .container-diviciones-two figure {
+    	margin-right: 0;
+    }
+
+    .slide-info-diviciones .container {
+    	flex-direction: column;
+    	padding-left: 20px;
+    	padding-right: 20px;
+    }
+
+    .slide-info-diviciones .container .divicion-slider {
+    	position: relative;
+    	top: 0;
+    	left: 0;
+    	transform: none;
+    	width: 100%;
+    }
+
+    .slide-info-diviciones .container .slide {
+    	width: 100%;
+    }
+
+    .slide-info-diviciones .container .divicion-slider h1 {
+    	font-size: 60px;
+    	letter-spacing: 0;
+    	text-align: center;
+    }
+
+    .slide-info-diviciones .container .divicion-slider p {
+    	padding-right: 0;
+    	text-align: justify;
+    	margin-bottom: 60px;
+    	padding-left: 50px;
+		padding-right: 80px;
+    }
+
+    .background-marcas .info-marcas {
+    	padding-left: 0;
+    	width: 100%;
+    }
+
+
+    .background-marcas-espejo .info-marcas {
+    	width: 100%;
+    	padding-left: 0;
+   		padding-right: 0;
+   		margin-bottom: 100px;
+    }
+
+ 	.background-marcas-espejo {
+ 		flex-direction: column-reverse;
+    	padding-left: 20px;
+    	padding-right: 20px;
+    	background-position: center;
+		background-size: cover;
+		margin-bottom: 0;
+ 	}
+
+ 	.background-marcas {
+    	flex-direction: column;
+    	padding-left: 20px;
+    	padding-right: 20px;
+    	background-position: center;
+		background-size: cover;
+    }
+
+    .vacantes .container {
+    	padding-left: 20px;
+    	padding-right: 20px;
+    }
+
+    .vacantes .container-vacantes .box-vacante {
+    	margin: 0 auto;
+    	margin-bottom: 90px;
+    }
+
+    .background-marcas .info-marcas .description {
+    	padding-right: 0;
+    	padding-left: 33px;
+    }
+
+    .background-marcas .info-marcas figure {
+    	width: 50%;
+    }
+
+    .background-marcas-espejo > figure, .background-marcas > figure {
+    	margin-bottom: 70px;
+    }
+
+    .contacto {
+    	margin-top: 100px;
+    }
+
+    .contacto .container {
+    	padding-right: 0;
+    	flex-direction: column;
+    	padding-left: 20px;
+		padding-right: 20px;
+    }
+
+    .contacto .container .info-contacto {
+    	width: 100%;
+    	position: relative;
+    	top: 0;
+    	left: 0;
+    	transform: none;
+    	margin-bottom: 70px;
+    }
+
+    .contacto .container .info-contacto h1 {
+    	font-size: 60px;
+		letter-spacing: 0;
+		text-align: center;
+    }
+
+    .contacto .container .info-contacto p {
+    	padding-right: 0;
+    	text-align: justify;
+    	padding-left: 50px;
+		padding-right: 80px;
+    }
+
+    .contacto .container .logo-contacto {
+    	width: 100%;
+    }
+
+    .contacto .container .logo-contacto figure {
+    	width: 50%;
+		margin: 0 auto;
+    }
+
+    .ubicacion-contacto .container {
+    	flex-direction: column;
+    	padding-top: 0;
+    }
+
+    #map {
+    	width: 100%;
+    	padding-left: 0;
+    	padding: 100px;
+    	margin-bottom: 100px;
+    }
+
+    .formulario {
+    	padding: 0;
+    	padding-left: 20px;
+		padding-right: 20px;
+    }
+
+    .formulario form textarea,
+    .formulario form input {
+    	width: 100%;
+    }
+
+    .ubicacion-contacto .container {
+    	background-image: none;
+    }
+
+    header {
+    	padding-left: 20px;
+    }
+
+    nav {
+    	display: none;
+    }
 }
+
+
+
+
 
 
 @media only screen and (max-width: 767px) {
@@ -886,13 +1143,24 @@ header nav a {
     	width: 100%;
     }
 
+
     .background-marcas-espejo .info-marcas {
     	width: 100%;
     	padding-left: 0;
    		padding-right: 0;
+   		margin-bottom: 100px;
     }
 
- 	.background-marcas-espejo, .background-marcas {
+ 	.background-marcas-espejo {
+ 		flex-direction: column-reverse;
+    	padding-left: 20px;
+    	padding-right: 20px;
+    	background-position: center;
+		background-size: cover;
+		margin-bottom: 0;
+ 	}
+
+ 	.background-marcas {
     	flex-direction: column;
     	padding-left: 20px;
     	padding-right: 20px;
@@ -908,6 +1176,86 @@ header nav a {
     .vacantes .container-vacantes .box-vacante {
     	margin: 0 auto;
     	margin-bottom: 90px;
+    }
+
+    .background-marcas .info-marcas .description {
+    	padding-right: 0;
+    	padding-left: 33px;
+    }
+
+    .background-marcas .info-marcas figure {
+    	width: 50%;
+    }
+
+    .background-marcas-espejo > figure, .background-marcas > figure {
+    	margin-bottom: 70px;
+    }
+
+    .contacto {
+    	margin-top: 100px;
+    }
+
+    .contacto .container {
+    	padding-right: 0;
+    	flex-direction: column;
+    	padding-left: 20px;
+		padding-right: 20px;
+    }
+
+    .contacto .container .info-contacto {
+    	width: 100%;
+    	position: relative;
+    	top: 0;
+    	left: 0;
+    	transform: none;
+    	margin-bottom: 70px;
+    }
+
+    .contacto .container .info-contacto h1 {
+    	font-size: 60px;
+		letter-spacing: 0;
+		text-align: center;
+    }
+
+    .contacto .container .info-contacto p {
+    	padding-right: 0;
+    	text-align: justify;
+    }
+
+    .contacto .container .logo-contacto {
+    	width: 100%;
+    }
+
+    .contacto .container .logo-contacto figure {
+    	width: 50%;
+		margin: 0 auto;
+    }
+
+    .ubicacion-contacto .container {
+    	flex-direction: column;
+    	padding-top: 0;
+    }
+
+    #map {
+    	width: 100%;
+    	padding-left: 0;
+    	padding: 100px;
+    	margin-bottom: 100px;
+    }
+
+    .formulario {
+    	padding: 0;
+    	padding-left: 20px;
+		padding-right: 20px;
+    }
+
+    .formulario form textarea,
+    .formulario form input {
+    	width: 100%;
+    }
+
+    .ubicacion-contacto .container {
+    	background-image: none;
     }
 
     header {
