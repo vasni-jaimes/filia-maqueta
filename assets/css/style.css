@@ -53,6 +53,10 @@ header .flex {
     align-items: center;
 }
 
+header nav .close {
+	display: none;
+}
+
 header nav a {
 	margin-right: 32px;
 	color: #828282;
@@ -63,6 +67,34 @@ header nav a {
 	line-height: 15px;
 	text-decoration: none;
 }
+
+
+.burger {
+    width: 52px;
+    height: 52px;
+    background: #000;
+    border-radius: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 13px;
+    cursor: pointer;
+}
+
+.burger span {
+    width: 90%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin-bottom: 3px;
+    text-align: right;
+}
+
+.burger span:nth-child(2) {
+    width: 75%;
+}
+
 
 
 .slide-info {
@@ -1010,11 +1042,49 @@ header nav a {
 
     header {
     	padding-left: 20px;
+    	padding-right: 20px;
+    }
+
+    .burger {
+    	display: flex;
     }
 
     nav {
-    	display: none;
-    }
+	    width: 100%;
+	    height: 100vh;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    background: #fff;
+	    transition: all .3s ease;
+	    visibility: hidden;
+	    visibility: hidden;
+	    opacity: 0;
+	    display: none;
+	    flex-direction: column;
+	    justify-content: center;
+	    z-index: 9;
+	}
+
+	nav.active {
+	    visibility: visible;
+	    opacity: 1;
+	    display: flex;
+	}
+
+	nav.active span.close {
+	    position: absolute;
+	    right: 30px;
+		top: 30px;
+	    display: block;
+	    cursor: pointer;
+	}
+
+	header nav a {
+		font-size: 30px;
+		line-height: 100px;
+		text-align: center;
+	}
 }
 
 
@@ -1260,11 +1330,49 @@ header nav a {
 
     header {
     	padding-left: 20px;
+    	padding-right: 20px;
+    }
+
+    .burger {
+    	display: flex;
     }
 
     nav {
-    	display: none;
-    }
+	    width: 100%;
+	    height: 100vh;
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    background: #fff;
+	    transition: all .3s ease;
+	    visibility: hidden;
+	    visibility: hidden;
+	    opacity: 0;
+	    display: none;
+	    flex-direction: column;
+	    justify-content: center;
+	    z-index: 9;
+	}
+
+	nav.active {
+	    visibility: visible;
+	    opacity: 1;
+	    display: flex;
+	}
+
+	nav.active span.close {
+	    position: absolute;
+	    right: 30px;
+		top: 30px;
+	    display: block;
+	    cursor: pointer;
+	}
+
+	header nav a {
+		font-size: 30px;
+		line-height: 100px;
+		text-align: center;
+	}
 }
 
 
